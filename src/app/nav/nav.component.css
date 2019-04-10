@@ -1,0 +1,60 @@
+nav a {
+    color: #ffffff;
+    cursor: pointer;
+}
+nav li:hover :not(button) {
+    color: lightgray;
+    border-bottom: 1px solid #ffffff;
+}
+#pageRoutes{
+    position: relative;
+    right: 0px;
+}
+ul{
+    width: 100%;
+}
+nav button {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.bgColor{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    background-color: #000000;
+    opacity: .4;
+    z-index: 1;
+}
+.overBg{
+    z-index: 2;
+}
+
+#v{
+    width: 43px;
+    margin-right: 1%;
+}
+    #vl{
+        transform: rotate(-25deg);
+        -webkit-clip-path: polygon(0 0%, 100% 11.5%, 100% 80%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 11.5%, 100% 80%, 0% 100%);
+        background-color: #ffffff;
+        width: 20px;
+        height: 80px;
+        display: inline-block;
+        position: absolute;
+
+    }
+    #vr{
+        transform: rotate(25deg);
+        -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 70%);
+        clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 70%);
+        background-color: #ffffff;
+        width: 20px;
+        height: 80px;
+        display: inline-block;
+        float: right;
+        margin-left: 0px;
+        opacity: .7;
+    }
